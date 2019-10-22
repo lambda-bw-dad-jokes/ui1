@@ -1,0 +1,297 @@
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+    
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+    
+    body {
+        line-height: 1;
+    }
+    
+    ol,
+    ul {
+        list-style: none;
+    }
+    
+    blockquote,
+    q {
+        quotes: none;
+    }
+    
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    
+    html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+    
+    body {
+        font-family: 'Ubuntu', sans-serif;
+        padding: 2rem;
+    }
+    
+    header {}
+    
+    .top-header nav {
+        display: flex;
+        justify-content: space-between;
+        height: 7vh;
+        background-color: #570d21;
+        align-items: center;
+    }
+    
+    .top-header nav a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .middle-header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #972c4a;
+        height: 8vh;
+        align-items: center;
+    }
+    
+    .middle-header h1 {
+        font-size: 3rem;
+        margin-left: 1rem;
+    }
+    
+    .middle-header nav a {
+        margin-right: 4rem;
+        text-decoration: none;
+        font-size: 2rem;
+        color: white;
+    }
+    
+    .word-header {
+        height: 80vh;
+        background-image: linear-gradient(to right, #972c4a67, #70082475), url(../img/Black-man-laughing.jpg);
+        background-size: 100% 100%;
+        position: relative;
+    }
+    
+    .word-header h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+    
+    .word-header h1 .dad {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 2rem;
+        font-size: 5rem;
+    }
+    
+    .word-header h1 .motto {
+        display: block;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    /* h1 {
+    font-size: rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+header div {
+    display: flex;
+    justify-content: space-around;
+}
+
+header div nav a {
+    margin-right: 2rem
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+    padding-bottom: 10px;
+}
+
+h4 {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+
+header div h1 {
+    width: 50%;
+}
+
+header div nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+header div nav a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: black;
+} */
