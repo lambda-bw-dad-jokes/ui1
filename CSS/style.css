@@ -132,10 +132,10 @@
     table {
         border-collapse: collapse;
         border-spacing: 0;
+        box-sizing: inherit;
     }
     
     html {
-        box-sizing: border-box;
         font-size: 62.5%;
     }
     
@@ -148,6 +148,7 @@
     body {
         font-family: 'Ubuntu', sans-serif;
         padding: 2rem;
+        box-sizing: border-box;
     }
     
     header {}
@@ -163,6 +164,7 @@
     .top-header nav a {
         color: white;
         text-decoration: none;
+        font-size: 1.5rem;
     }
     
     .nav-header {
@@ -233,11 +235,65 @@
         margin-top: 2rem;
         width: 50%;
         letter-spacing: 0.5rem;
+        height: 3rem;
     }
     
     .btn:hover {
         transform: translateY(-1rem);
         box-shadow: 0 1rem;
+    }
+    
+    .top-section {
+        display: flex;
+        justify-content: center;
+        height: 60vh;
+        background-color: #cfa6968e;
+        padding: 5rem;
+    }
+    
+    .top-section div {
+        padding: 2rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .top-section div h2 {
+        font-size: 3rem;
+    }
+    
+    .top-section div i {
+        font-size: 3rem;
+        color: #972c4a;
+    }
+    
+    .middle-section {
+        height: 40vh;
+        background-color: antiquewhite;
+    }
+    
+    footer {
+        height: 20vh;
+        background-color: #570d21;
+        font-size: 3rem;
+        color: aliceblue;
+    }
+    
+    .about-top {
+        height: 30vh;
+        background-image: linear-gradient(to right, #972c4aa6, #800c2b);
+        font-size: 6rem;
+        font-weight: 800;
+        position: relative;
+    }
+    
+    .about-top p {
+        position: absolute;
+        left: 0;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+        font-size: 6rem;
+        color: aliceblue;
     }
     /* h1 {
     font-size: rem;
@@ -318,5 +374,5 @@ header div nav {
 header div nav a {
     text-decoration: none;
     font-size: 1.6rem;
-    color: black;
+     color: black;
 } */
