@@ -1,358 +1,363 @@
-    /* http://meyerweb.com/eric/tools/css/reset/ 
+        /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-    
-    html,
-    body,
-    div,
-    span,
-    applet,
-    object,
-    iframe,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    blockquote,
-    pre,
-    a,
-    abbr,
-    acronym,
-    address,
-    big,
-    cite,
-    code,
-    del,
-    dfn,
-    em,
-    img,
-    ins,
-    kbd,
-    q,
-    s,
-    samp,
-    small,
-    strike,
-    strong,
-    sub,
-    sup,
-    tt,
-    var,
-    b,
-    u,
-    i,
-    center,
-    dl,
-    dt,
-    dd,
-    ol,
-    ul,
-    li,
-    fieldset,
-    form,
-    label,
-    legend,
-    table,
-    caption,
-    tbody,
-    tfoot,
-    thead,
-    tr,
-    th,
-    td,
-    article,
-    aside,
-    canvas,
-    details,
-    embed,
-    figure,
-    figcaption,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    output,
-    ruby,
-    section,
-    summary,
-    time,
-    mark,
-    audio,
-    video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
-    }
-    /* HTML5 display-role reset for older browsers */
-    
-    article,
-    aside,
-    details,
-    figcaption,
-    figure,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    section {
-        display: block;
-    }
-    
-    body {
-        line-height: 1;
-    }
-    
-    ol,
-    ul {
-        list-style: none;
-    }
-    
-    blockquote,
-    q {
-        quotes: none;
-    }
-    
-    blockquote:before,
-    blockquote:after,
-    q:before,
-    q:after {
-        content: '';
-        content: none;
-    }
-    
-    table {
-        border-collapse: collapse;
-        border-spacing: 0;
-        box-sizing: inherit;
-    }
-    
-    html {
-        font-size: 62.5%;
-    }
-    
-    *,
-    *:before,
-    *:after {
-        box-sizing: inherit;
-    }
-    
-    body {
-        font-family: 'Ubuntu', sans-serif;
-        padding: 2rem;
-        box-sizing: border-box;
-    }
-    
-    header {}
-    
-    .top-header nav {
-        display: flex;
-        justify-content: space-between;
-        height: 7vh;
-        background-color: #570d21;
-        align-items: center;
-    }
-    
-    .top-header nav a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.5rem;
-    }
-    
-    .nav-header {
-        display: flex;
-        justify-content: space-between;
-        background-color: #972c4a;
-        height: 8vh;
-        align-items: center;
-    }
-    
-    .nav-header h1 {
-        font-size: 3rem;
-        margin-left: 1rem;
-    }
-    
-    .nav-header nav a {
-        margin-right: 4rem;
-        text-decoration: none;
-        font-size: 2rem;
-        color: white;
-    }
-    
-    .word-header {
-        height: 80vh;
-        background-image: linear-gradient(to right, #972c4a67, #70082475), url(../img/Black-man-laughing.jpg);
-        background-size: 100% 100%;
-        background-position: top;
-        position: relative;
-    }
-    
-    .word-header h1 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        text-align: center
-    }
-    
-    .word-header h1 .dad {
-        display: block;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 600;
-        letter-spacing: 2rem;
-        font-size: 5rem;
-    }
-    
-    .word-header h1 .motto {
-        display: block;
-        font-size: 2rem;
-        font-weight: 600;
-    }
-    
-    .btn:link,
-    .btn:visited {
-        text-decoration: none;
-        text-transform: uppercase;
-        display: inline-block;
-        padding: 1rem 2rem;
-        border-radius: 100rem;
-        transition: all, .3s;
-    }
-    
-    .header-btn {
-        background-color: #972c4a;
-        color: white;
-        margin-top: 2rem;
-        width: 50%;
-        letter-spacing: 0.5rem;
-        height: 3rem;
-    }
-    
-    .btn:hover {
-        transform: translateY(-1rem);
-        box-shadow: 0 1rem;
-    }
-    
-    .top-section {
-        display: flex;
-        justify-content: center;
-        height: 60vh;
-        background-color: #cfa6968e;
-        padding: 5rem;
-    }
-    
-    .top-section div {
-        padding: 2rem;
-        font-size: 2rem;
-        text-align: center;
-    }
-    
-    .top-section div h2 {
-        font-size: 3rem;
-    }
-    
-    .top-section div i {
-        font-size: 3rem;
-        color: #972c4a;
-    }
-    
-    .middle-section {
-        height: 40vh;
-        background-color: antiquewhite;
-    }
-    
-    footer {
-        height: 20vh;
-        background-color: #570d21;
-        font-size: 3rem;
-        color: aliceblue;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    
-    .foot-nav {
-        font-size: 1.5rem;
-        margin-top: 2rem;
-    }
-    
-    .foot-nav a {
-        margin-right: 1.8rem;
-        text-decoration: none;
-        color: aliceblue;
-        opacity: .8;
-        margin-left: 20px;
-    }
-    
-    .foot-icon {
-        font-size: 3rem;
-        margin-top: 2rem;
-    }
-    
-    .foot-icon i {
-        margin-right: 2rem;
-    }
-    
-    .copyright {
-        font-size: 1.5rem;
-        margin-top: 1.8rem;
-    }
-    
-    .about-top {
-        height: 30vh;
-        background-image: linear-gradient(to right, #972c4aa6, #800c2b);
-        font-size: 6rem;
-        font-weight: 800;
-        position: relative;
-    }
-    
-    .about-top p {
-        position: absolute;
-        left: 0;
-        top: 40%;
-        width: 100%;
-        text-align: center;
-        font-size: 6rem;
-        color: aliceblue;
-    }
-    
-    .our-team {
-        font-size: 3rem;
-        text-align: center;
-        text-transform: uppercase;
-        margin-top: 3rem;
-    }
-    
-    .about-pics {
-        height: 60vh;
-        background-color: #daced1;
-        padding: 10rem;
-        display: flex;
-        justify-content: space-around;
-        /* flex-wrap: wrap; */
-        font-size: 1.5rem;
-    }
-    
-    .container-pics img {
-        width: 10rem;
-        border-radius: 100%;
-    }
-    
-    @media screen and (max-width: 650px) {
-        .column {
-            width: 100%;
+        
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
             display: block;
         }
-    }
+        
+        body {
+            line-height: 1;
+        }
+        
+        ol,
+        ul {
+            list-style: none;
+        }
+        
+        blockquote,
+        q {
+            quotes: none;
+        }
+        
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+        
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            box-sizing: inherit;
+        }
+        
+        html {
+            font-size: 62.5%;
+        }
+        
+        @media(max-width: 650px) {
+            html {
+                font-size: 31.5%;
+            }
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+        
+        header {}
+        
+        .top-header nav {
+            display: flex;
+            justify-content: space-between;
+            height: 7vh;
+            background-color: #570d21;
+            align-items: center;
+        }
+        
+        .top-header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+        
+        .nav-header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #972c4a;
+            height: 8vh;
+            align-items: center;
+        }
+        
+        .nav-header h1 {
+            font-size: 4rem;
+            margin-left: 1rem;
+            font-weight: 600;
+        }
+        
+        .nav-header nav a {
+            margin-right: 4rem;
+            text-decoration: none;
+            font-size: 2rem;
+            color: white;
+        }
+        
+        .word-header {
+            height: 80vh;
+            background-image: linear-gradient(to right, #972c4a67, #70082475), url(../img/Black-man-laughing.jpg);
+            background-size: 100% 100%;
+            background-position: top;
+            position: relative;
+        }
+        
+        .word-header h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center
+        }
+        
+        .word-header h1 .dad {
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2rem;
+            font-size: 5rem;
+        }
+        
+        .word-header h1 .motto {
+            display: block;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        
+        .btn:link,
+        .btn:visited {
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 100rem;
+            transition: all, .3s;
+        }
+        
+        .header-btn {
+            background-color: #972c4a;
+            color: white;
+            margin-top: 2rem;
+            width: 50%;
+            letter-spacing: 0.5rem;
+            height: 3rem;
+        }
+        
+        .btn:hover {
+            transform: translateY(-1rem);
+            box-shadow: 0 1rem;
+        }
+        
+        .btn-log {
+            background-color: rgb(148, 106, 21);
+            border: 0.5rem solid beige;
+        }
+        
+        .top-section {
+            display: flex;
+            justify-content: center;
+            height: 60vh;
+            background-color: #cfa6968e;
+            padding: 5rem;
+        }
+        
+        .top-section div {
+            padding: 2rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+        
+        .top-section div h2 {
+            font-size: 3rem;
+        }
+        
+        .top-section div i {
+            font-size: 3rem;
+            color: #972c4a;
+        }
+        
+        .middle-section {
+            height: 40vh;
+            background-color: antiquewhite;
+        }
+        
+        footer {
+            height: 20vh;
+            background-color: #570d21;
+            font-size: 3rem;
+            color: aliceblue;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .foot-nav {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .foot-nav a {
+            margin-right: 1.8rem;
+            text-decoration: none;
+            color: aliceblue;
+            opacity: .8;
+            margin-left: 20px;
+        }
+        
+        .foot-icon {
+            font-size: 3rem;
+            margin-top: 2rem;
+        }
+        
+        .foot-icon i {
+            margin-right: 2rem;
+        }
+        
+        .copyright {
+            font-size: 1.5rem;
+            margin-top: 1.8rem;
+        }
+        
+        .about-top {
+            height: 30vh;
+            background-image: linear-gradient(to right, #972c4aa6, #800c2b);
+            font-size: 6rem;
+            font-weight: 800;
+            position: relative;
+        }
+        
+        .about-top p {
+            position: absolute;
+            left: 0;
+            top: 40%;
+            width: 100%;
+            text-align: center;
+            font-size: 6rem;
+            color: aliceblue;
+        }
+        
+        .our-team {
+            font-size: 3rem;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 3rem;
+        }
+        
+        .about-pics {
+            height: 60vh;
+            background-color: #daced1;
+            padding: 10rem;
+            display: flex;
+            justify-content: space-around;
+            /* flex-wrap: wrap; */
+            font-size: 1.5rem;
+        }
+        
+        .container-pics img {
+            width: 10rem;
+            border-radius: 100%;
+        }
