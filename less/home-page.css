@@ -1,0 +1,110 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+body .word-header {
+  height: 80vh;
+  background-image: linear-gradient(to right, #972c4a67, #70082475), url(../img/Black-man-laughing.jpg);
+  background-size: 100% 100%;
+  background-position: top;
+  position: relative;
+}
+body .word-header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+body .word-header h1 .dad {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2rem;
+  font-size: 5rem;
+}
+body .word-header h1 .motto {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+}
+body .btn:link,
+body .btn:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 100rem;
+  transition: all, 0.3s;
+}
+body .btn:link:hover,
+body .btn:visited:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 1rem;
+}
+body .header-btn {
+  background-color: #972c4a;
+  color: white;
+  margin-top: 2rem;
+  width: 50%;
+  letter-spacing: 0.5rem;
+  height: 3rem;
+}
+body .top-section {
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+  background-color: #cfa6968e;
+  padding: 5rem;
+}
+body .top-section div {
+  padding: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  width: 33.3%;
+}
+body .top-section div h2 {
+  font-size: 3rem;
+}
+body .top-section div i {
+  font-size: 3rem;
+  color: #972c4a;
+}
+body .about-top {
+  height: 30vh;
+  background-image: linear-gradient(to right, #972c4aa6, #800c2b);
+  font-size: 6rem;
+  font-weight: 800;
+  position: relative;
+}
+body .about-top p {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 6rem;
+  color: aliceblue;
+}
+body .our-team {
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+body .our-team div {
+  height: 60vh;
+  background-color: #daced1;
+  padding: 10rem;
+  display: flex;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+  font-size: 1.5rem;
+}
+body .our-team div img {
+  border-radius: 100%;
+  width: 100%;
+}
